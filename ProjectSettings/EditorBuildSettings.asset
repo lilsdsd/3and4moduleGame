@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ThePhone/PasswordSscene/Password.unity
+    path: Assets/Scenes/ThePhone/Levels/Level001/PasswordSscene/Password.unity
     guid: 8fd41a9aadc7d482ca8601210e97d22b
   - enabled: 1
-    path: Assets/Scenes/ThePhone/TheMainPhone.unity
-    guid: aa3936ba26f5c1b4a82f5fc3ea032de2
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MainScreen.unity
+    guid: db3609adb7ba1a348bfb643df8f82f15
   - enabled: 1
-    path: Assets/Scenes/ThePhone/MessageApp/MessageApp.unity
-    guid: d29a7b9e875e24c0d8014e44c283929f
-  - enabled: 1
-    path: Assets/Scenes/ThePhone/MessageApp/FirstMessage.unity
-    guid: 18710d6528f9e4bf8a9ba12f56a07734
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1VideoIntro.unity
+    guid: d4006a5b2753f4a4380035c8751a2029
   m_configObjects: {}

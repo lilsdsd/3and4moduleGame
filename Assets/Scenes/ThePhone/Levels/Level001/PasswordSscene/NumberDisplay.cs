@@ -152,7 +152,7 @@ public class NumberDisplay : MonoBehaviour
            if(codeSequence == "0617")// 비번?
            {
             Debug.Log("correct!");
-            SceneManager.LoadScene("TheMainPhone");
+            SceneManager.LoadScene("Lv1VideoIntro");
 
            }else{
                Debug.Log("Wrong!");
