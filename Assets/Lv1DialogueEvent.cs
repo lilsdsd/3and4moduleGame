@@ -8,6 +8,7 @@ public class Lv1DialogueEvent : MonoBehaviour
 {
 
     public GameObject dialogueManager; 
+    public GameObject PlayerDialogueManager; 
     public GameObject Screenbutton;
     public bool isClick = true;
 
@@ -15,14 +16,11 @@ public class Lv1DialogueEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DialogueEvent();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void DialogueEvent(){
 
@@ -30,14 +28,15 @@ public class Lv1DialogueEvent : MonoBehaviour
         {
             case 0:
                 //00씨, 지금 전화 괜찮으신가요?
-
+                Debug.Log("eventNum0Triggered");
                 dialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();//
                 isClick = true;
             break;
             
             case 1:
             //네 작가님 괜찮습니다. 무슨일이시죠?
-                dialogueManager.GetComponent<DialogueManager>().DisplayNextSentence();
+                //PlayerDialogueManager.GetComponent<DialogueManager>().DisplayNextSentence();
+                PlayerDialogueManager.GetComponent<DialogueTrigger>().TriggerDialogue();
                 isClick = true;
             break;
 

@@ -8,7 +8,7 @@ public class Lv1RingingScreenScript : MonoBehaviour
     // Start is called before the first frame update
     public RectTransform originalSize;
     public List<GameObject> Childs;
-    public List<GameObject> ChildsOriginalSize ;
+    public List<GameObject> ChildsOriginalSize;
     void Awake(){
        gameObject.SetActive(false);
         //transform.SetAsFirstSibling();
