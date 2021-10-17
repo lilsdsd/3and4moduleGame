@@ -6,7 +6,7 @@ public class TalkingTrigger : MonoBehaviour
 {
 
     private void Start(){
-        StartDialogue();
+        StartDialogue(); //start dialogue
     }
     public Message[] messages;
     public Actor[] actors;
@@ -21,7 +21,7 @@ public class TalkingTrigger : MonoBehaviour
 [System.Serializable]
 public class Message {
     public int actorId;
-    public string messae;
+    public string message;
 }
 
 [System.Serializable]
