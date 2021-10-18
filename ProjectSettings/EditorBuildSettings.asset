@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ThePhone/Levels/Level001/PasswordSscene/Password.unity
+    path: Assets/Scenes/ThePhone/Levels/Level001/Password.unity
     guid: 8fd41a9aadc7d482ca8601210e97d22b
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MainScreen.unity
