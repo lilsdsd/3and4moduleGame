@@ -16,7 +16,7 @@ public class TalkingManager : MonoBehaviour
     
     Message[] currentMessages;
     Actor[] currentActors;
-    int activeMessage = 0;
+    public int activeMessage = 0;
 
     public static bool isActive = false;
 
