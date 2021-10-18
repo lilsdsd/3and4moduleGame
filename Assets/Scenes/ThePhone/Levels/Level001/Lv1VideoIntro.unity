@@ -1764,7 +1764,7 @@ MonoBehaviour:
   messageText: {fileID: 1116954145}
   backgroundBox: {fileID: 11331770}
   BG: {fileID: 674875099}
-  textWritingDelaySpeed: 0.05
+  textWritingDelaySpeed: 0.025
   activeMessage: 0
 --- !u!1 &1116954143
 GameObject:
