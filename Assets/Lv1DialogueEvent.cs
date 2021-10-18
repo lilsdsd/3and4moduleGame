@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Lv1DialogueEvent : MonoBehaviour
@@ -67,7 +68,7 @@ public class Lv1DialogueEvent : MonoBehaviour
             break;
 
              case 3:
-                //선택지출력
+                //선택지출력 아... 
                 Debug.Log("eventNum" + eventNum +"Triggered");
                 dialogueManager.GetComponent<TalkingManager>().NextMessage();
                 
@@ -78,15 +79,49 @@ public class Lv1DialogueEvent : MonoBehaviour
             break;
 
             case 4:
-                //답변후 메세지 출력 void 선택지 AB가 자동으로 다음 답에 도달하게 해줌 
+                //그리고..
+                dialogueManager.GetComponent<TalkingManager>().activeMessage = 7;
                 Debug.Log("eventNum" + eventNum +"Triggered");
                 dialogueManager.GetComponent<TalkingManager>().NextMessage();
                 
-                // show sontecji
                 
-
-                isClick = false;
+                
+                 isClick = true;
             break;
+
+            case 5:
+                //이번 ~를 쓰고있어서 비슷한 내용을 다룬 책이 필요할거같아요 구해다 주실 수 있나요?
+                
+                Debug.Log("eventNum" + eventNum +"Triggered");
+                dialogueManager.GetComponent<TalkingManager>().NextMessage();
+                
+                
+                
+                 isClick = true;
+            break;
+
+            case 6:
+                //네한번 찾아보도록할게요
+                
+                Debug.Log("eventNum" + eventNum +"Triggered");
+                dialogueManager.GetComponent<TalkingManager>().NextMessage();
+                
+                
+                
+                 isClick = true;
+                 //전화 이벤트가 종료되며 메인화면으로 이동
+                 
+            break;
+
+            case 7: 
+                SceneManager.LoadScene("Lv1MainScreen");
+            break;
+
+            
+
+
+
+            
             default:
 
 
