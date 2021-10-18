@@ -93,7 +93,7 @@ public class TalkingManager : MonoBehaviour
 
     public void Update(){
         if (Input.GetKeyDown(KeyCode.Space) && isActive == true) {
-            NextMessage();
+            //NextMessage();
         }
     }
 

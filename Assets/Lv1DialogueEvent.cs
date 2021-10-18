@@ -18,7 +18,12 @@ public class Lv1DialogueEvent : MonoBehaviour
     }
 
     // Update is called once per frame
-    
+    public void Update(){
+        if(isClick == true && Input.GetMouseButtonDown(0)){
+            Debug.Log("클릭이 감지외었습니다. (eventnum is" + eventNum+" now)" );
+            PlusEventNum();
+        }
+    }
 
     public void DialogueEvent(){
 
@@ -26,13 +31,18 @@ public class Lv1DialogueEvent : MonoBehaviour
         {
             case 0:
                 //00씨, 지금 전화 괜찮으신가요?
-                Debug.Log("eventNum0Triggered");
-               
+                Debug.Log("eventNum" + eventNum +"Triggered");
+                dialogueManager.GetComponent<TalkingTrigger>().StartDialogue();
+
                 isClick = true;
+
+
             break;
             
             case 1:
-            //네 작가님 괜찮습니다. 무슨일이시죠?
+                //네 작가님 괜찮습니다. 무슨일이시죠?
+                Debug.Log("eventNum" + eventNum +"Triggered");
+                dialogueManager.GetComponent<TalkingManager>().NextMessage();
                 //PlayerDialogueManager.GetComponent<DialogueManager>().DisplayNextSentence();
                 
                 isClick = true;
