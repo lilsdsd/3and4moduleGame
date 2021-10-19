@@ -14,7 +14,7 @@ public class MessageAppsystem : MonoBehaviour
     }
 
     public void OpenFirst(){
-        SceneManager.LoadScene("FirstMessage");
+        SceneManager.LoadScene("Lv1FirstMessage");
     }
 
 
