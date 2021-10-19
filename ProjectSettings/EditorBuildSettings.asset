@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1VideoIntro.unity
     guid: d4006a5b2753f4a4380035c8751a2029
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1Message.unity
+    guid: a9e3863d5049249f0bfef4eae47ac330
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1BirdBooks.unity
+    guid: 55cac536b981d483487369388f7fc214
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MessageList/Lv1FirstMessage.unity
+    guid: 403c3e4acc0024949b1f626a7189ee9c
   m_configObjects: {}

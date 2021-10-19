@@ -14,7 +14,19 @@ public class GameSystem : MonoBehaviour
     }
 
     public void OpenMessageApp(){
-        SceneManager.LoadScene("MessageApp");
+        SceneManager.LoadScene("Lv1Message");
+    }
+
+       public void OpenBankApp(){
+        //SceneManager.LoadScene("MessageApp");
+    }
+
+    public void OpenBirdBookApp(){
+        SceneManager.LoadScene("Lv1BirdBookApp");
+    }
+
+    public void OpenSettingApp(){
+        SceneManager.LoadScene("SettingApp");
     }
 
 

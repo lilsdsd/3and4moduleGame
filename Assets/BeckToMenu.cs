@@ -12,7 +12,8 @@ public class BeckToMenu : MonoBehaviour
     }
 
     public void BackToMenu(){
-        SceneManager.LoadScene("TheMainPhone");
+        SceneManager.LoadScene("Lv1TheMainPhone");
+
     }
  
     }
