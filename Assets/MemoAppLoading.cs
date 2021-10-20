@@ -16,8 +16,8 @@ public class MemoAppLoading : MonoBehaviour
     IEnumerator Timer(){
        // yield return new WaitForSeconds(2f);
         
-            LeanTween.size(gameObject.GetComponent<RectTransform>(), gameObject.GetComponent<RectTransform>().sizeDelta*0,3f ).setEase(LeanTweenType.easeInBack);
-            LeanTween.alpha( transform.GetChild(0).GetComponent<RectTransform>(), 0f, 2.5f);
+            LeanTween.size(gameObject.GetComponent<RectTransform>(), gameObject.GetComponent<RectTransform>().sizeDelta*0,3f ).setEase(LeanTweenType.easeInExpo);
+            LeanTween.alphaText( transform.GetChild(0).GetComponent<RectTransform>(), 0f, 3f).setEase(LeanTweenType.easeInCirc);
         yield break;
     }
 
