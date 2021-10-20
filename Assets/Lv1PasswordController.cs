@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Lv1PasswordController : MonoBehaviour
 {
+    public GameObject PasswordPopupGroup;
+    public GameObject UpdatePopupGroup;
     [SerializeField] InputField field;
     [SerializeField] Text text;
     [SerializeField] string pw = "1234";
@@ -20,6 +22,7 @@ public class Lv1PasswordController : MonoBehaviour
     {
         if(field.text == pw){
             text.text = "열렸습니다 ";
+            PasswordPopupGroup.SetActive(false);
         }else{
             if(field.text.Length > 6){
                 field.text = "";
