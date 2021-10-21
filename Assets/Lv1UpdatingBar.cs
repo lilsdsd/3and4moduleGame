@@ -33,7 +33,7 @@ public class Lv1UpdatingBar : MonoBehaviour
 
          //   CurrentHealth += 7.5f*Time.deltaTime;
 
-            LeanTween.value( gameObject, updateValueExampleCallback, 0f, 100f, 10f).setEase(LeanTweenType.easeInExpo);
+            LeanTween.value( gameObject, updateValueExampleCallback, 0f, 100f, 5f).setEase(LeanTweenType.easeInExpo);
                 
 
             isPlaying = false;
