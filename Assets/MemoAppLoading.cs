@@ -16,13 +16,13 @@ public class MemoAppLoading : MonoBehaviour
     IEnumerator Timer(){
        // yield return new WaitForSeconds(2f);
         
-            LeanTween.size(gameObject.GetComponent<RectTransform>(), gameObject.GetComponent<RectTransform>().sizeDelta*0,3f ).setEase(LeanTweenType.easeInExpo);
-            LeanTween.alphaText( transform.GetChild(0).GetComponent<RectTransform>(), 0f, 3f).setEase(LeanTweenType.easeInCirc);
+            LeanTween.size(gameObject.GetComponent<RectTransform>(), gameObject.GetComponent<RectTransform>().sizeDelta*0,1f ).setEase(LeanTweenType.easeInExpo);
+            LeanTween.alphaText( transform.GetChild(0).GetComponent<RectTransform>(), 0f, 1f).setEase(LeanTweenType.easeInCirc);
         yield break;
     }
 
     IEnumerator SelfKillTimer(){
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3f);
             Destroy(gameObject);
     }
 

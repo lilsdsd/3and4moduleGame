@@ -22,11 +22,15 @@ public class GameSystem : MonoBehaviour
     }
 
     public void OpenBirdBookApp(){
-        SceneManager.LoadScene("Lv1BirdBookApp");
+        SceneManager.LoadScene("Lv1BirdBooks");
     }
 
     public void OpenSettingApp(){
         SceneManager.LoadScene("SettingApp");
+    }
+
+    public void OpenMemoApp(){
+        SceneManager.LoadScene("Lv1MemoApp");
     }
 
 
