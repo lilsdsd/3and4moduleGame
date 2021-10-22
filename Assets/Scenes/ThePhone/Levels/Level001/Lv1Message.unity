@@ -742,7 +742,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 822734005}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99995244
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1308,6 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elements: []
+  ifElseSceneToGo: 
 --- !u!114 &544912380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1569,7 +1570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &743305242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2053,7 +2054,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1148629934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1876449715}
+        m_TargetAssemblyTypeName: MessageAppsystem, Assembly-CSharp
+        m_MethodName: OpenSecond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1148629934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,7 +2258,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sample
+  m_Text: "\uC791\uAC00"
 --- !u!222 &1186154158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2563,7 +2576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0004831354}
+  m_AnchoredPosition: {x: 0, y: 0.00015864446}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1438738802
@@ -2796,7 +2809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FirstMessage
+  m_Text: SNS
 --- !u!222 &1531166471
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2925,7 +2938,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1637117675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1876449715}
+        m_TargetAssemblyTypeName: MessageAppsystem, Assembly-CSharp
+        m_MethodName: OpenThird
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1637117675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,7 +3006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1640040055
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3263,7 +3288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sample
+  m_Text: "\uC560\uC778"
 --- !u!222 &1778122524
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3427,6 +3452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e8d58986e0a4997883a66e13033dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName:
+  - Lv1FirstMessage
+  - Lv1SecondMessage
+  - Lv1ThirdMessage
 --- !u!4 &1876449716
 Transform:
   m_ObjectHideFlags: 0

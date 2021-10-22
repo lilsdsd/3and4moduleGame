@@ -7,14 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class MessageAppsystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public List<string> SceneName;
+
 
     public void OpenFirst(){
-        SceneManager.LoadScene("Lv1FirstMessage");
+        SceneManager.LoadScene(SceneName[0]);
+    }
+    public void OpenSecond(){
+        SceneManager.LoadScene(SceneName[1]);
+    }
+    public void OpenThird(){
+        SceneManager.LoadScene(SceneName[2]);
     }
 
 

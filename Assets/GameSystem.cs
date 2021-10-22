@@ -33,5 +33,9 @@ public class GameSystem : MonoBehaviour
         SceneManager.LoadScene("Lv1MemoApp");
     }
 
+    public void OpenSNSApp(){
+        SceneManager.LoadScene("Lv1SNS");
+    }
+
 
 }
