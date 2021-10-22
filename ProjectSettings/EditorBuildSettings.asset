@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MessageList/Lv1FirstMessage.unity
     guid: 403c3e4acc0024949b1f626a7189ee9c
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MemoApp.unity
+    guid: 4314a4b5d262a473598004bd90eff750
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1BankApp.unity
+    guid: 51614fdcc0b7246e39fbb26ee2903925
   m_configObjects: {}

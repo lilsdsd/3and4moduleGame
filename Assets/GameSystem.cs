@@ -18,7 +18,7 @@ public class GameSystem : MonoBehaviour
     }
 
        public void OpenBankApp(){
-        //SceneManager.LoadScene("MessageApp");
+        SceneManager.LoadScene("Lv1BankApp");
     }
 
     public void OpenBirdBookApp(){
