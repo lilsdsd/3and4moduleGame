@@ -14,7 +14,7 @@ public class BankSystemSetScript : MonoBehaviour
     {
         // This way every single script in my game could access this 
         // variable just writing:
-        BankMoney = 0;
+        BankMoney = 20000;
     }
    // GlobalVariables.pathLength += SegmentLength;
 

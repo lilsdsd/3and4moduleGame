@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elements: []
+  isElseToGo: 0
   ifElseSceneToGo: 
 --- !u!114 &964832111
 MonoBehaviour:

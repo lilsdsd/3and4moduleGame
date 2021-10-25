@@ -9,6 +9,7 @@ public class BackButtonScript : MonoBehaviour
     //혹은 어떤 팝업이 떠있을시, 비활성화합니다.
 
     public List<GameObject> Elements;
+    public bool isElseToGo = false;
     public string ifElseSceneToGo;
     private int numberOfActive;
     // Start is called before the first frame update
@@ -45,12 +46,12 @@ public class BackButtonScript : MonoBehaviour
                 else
                 {
                     numberOfActive -= 1;
-                    if (numberOfActive <= 0 && ifElseSceneToGo == null)
+                    if (numberOfActive <= 0 && string.IsNullOrWhiteSpace(ifElseSceneToGo) == true)
                     {
                         Debug.Log("BackButton: 활성화된 element가 없음으로 홈화면으로 복귀합니다");
                         SceneManager.LoadScene("Lv1MainScreen");
                     }
-                    else if (numberOfActive <= 0 && ifElseSceneToGo != null)
+                    else if (numberOfActive <= 0 && string.IsNullOrWhiteSpace(ifElseSceneToGo) == false)
                     {
                         Debug.Log("BackButton: 활성화된 element가 없음으로 홈화면으로 복귀합니다" + " 그리고 입력된 씬으로 이동합니다");
                         SceneManager.LoadScene(ifElseSceneToGo);
