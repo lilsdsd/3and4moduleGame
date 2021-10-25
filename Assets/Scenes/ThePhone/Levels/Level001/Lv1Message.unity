@@ -742,7 +742,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 822734005}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99995244
+  m_Size: 0.99994844
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elements: []
-  ifElseSceneToGo: 
+  ifElseSceneToGo: Lv1MainScene
 --- !u!114 &544912380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,7 +2576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00015864446}
+  m_AnchoredPosition: {x: 0, y: 0.00016126678}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1438738802
