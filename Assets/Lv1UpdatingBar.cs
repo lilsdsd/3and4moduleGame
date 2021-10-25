@@ -11,6 +11,7 @@ public class Lv1UpdatingBar : MonoBehaviour
 
     
     public List<GameObject> Childs;
+    public List<GameObject> ThingsToDisable;
 
     private float MaxHealth = 100f;
     private bool isPlaying = false;
@@ -54,8 +55,12 @@ public class Lv1UpdatingBar : MonoBehaviour
 
             
                     LeanTween.size(Childs[i].GetComponent<RectTransform>(), Childs[i].GetComponent<RectTransform>().sizeDelta*0f, 0.8f).setEase(LeanTweenType.easeInOutCubic);
-             
+
        
+                    }
+
+                    for (int t = 0; t < ThingsToDisable.Count; t++){
+                        ThingsToDisable[t].SetActive(false);
                     }
                  }
                

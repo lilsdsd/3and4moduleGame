@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.85044396, b: 0.6367924, a: 1}
+  m_Color: {r: 0.4, g: 0.79607844, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -947,7 +947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &391060885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1050,7 +1050,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 422560822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129943889}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &422560822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2732,6 +2744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Elements:
   - {fileID: 727991750}
+  - {fileID: 1129943889}
+  - {fileID: 391060884}
   isElseToGo: 0
   ifElseSceneToGo: 
 --- !u!114 &1775705279
@@ -3023,8 +3037,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -22.900024}
-  m_SizeDelta: {x: -543.3, y: -189.8}
+  m_AnchoredPosition: {x: 0, y: -3.4000244}
+  m_SizeDelta: {x: -543.3, y: -97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902860580
 MonoBehaviour:
@@ -3059,19 +3073,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\uB300 \uD788\uD2B8\uC791[]\uC758 \uC2A4\uD0C0 \uC791\uAC00\n\u3141\u3141\uC758
-    \uC18C\uC2DD\uC774\n \uC0AC\uB77C\uC9C4\uC9C0 N\uB144\uC9F8, \uB418\uACE0\uC788\uC5B4\n\n\uBB34\uC2A8\uC77C\uC774
-    \uBC1C\uC0DD\uD55C\uAC74 \uC544\uB2D0\uAE4C \uC2F6\uC9C0\uB9CC, \n\uC6B0\uB9AC
-    SNS \uCDE8\uC7AC \uD300\uB3C4\n~\uC758 \uCC3D\uAC04\uC77C\uC744 \uAE30\uB150\uD574
-    \uC5F4\uC2EC\uD788 \uCDE8\uC7AC\uB97C \uB2E4\uB154\uC9C0\uB9CC,  \uBCC4\uB2E4\uB978
-    \uC18C\uC2DD\uC740 \uAC74\uC9C0\uC9C0 \uBABB\uD588\uC5B4.. \n\n\uAC00\uB054 \uC5EC\uAE30\uC800\uAE30\uC11C
-    \n\uBAA9\uACA9\uB2F4\uC774 \uC804\uD574\uC838\uC624\uAE30\uB3C4 \uD558\uB294\uB465,
-    \uC644\uC804\uD788 \uC790\uCDE8\uB97C \uAC10\uCD98\uAC74 \uC544\uB2CC\uAC00\uBD10.\n\n\uD6C4\uC18D\uC791\uC744
-    \uC9D1\uC911\uD558\uAE30\uC704\uD574 \uC2DC\uAC04\uC740 \uAC16\uB294 \uAC70\uB294
-    \uC124\uC774 \uC8FC\uBAA9\uBC1B\uC544 \uD32C\uB4E4\uC758 \uAE30\uB300\uAC00 \uC624\uD788\uB824
-    \uB192\uC544\uC9C0\uAE30\uB3C4 \uD558\uB294\uB4F1 \uC544\uC9C1\uB3C4 \uC791\uAC00\uC5D0
-    \uB300\uD55C \uAD00\uC2EC\uC740 \uC544\uC9C1\uB3C4 \uC2DD\uC9C0 \uC54A\uB2E4\uB294\uAC8C
-    \uCC38 \uB180\uB77C\uC6CC!\n\n"
+  m_Text: "\uCD5C\uADFC \uBA87\uB144\uC9F8\n00\uC791\uAC00\uC758 \uD589\uBC29\uC774
+    \uBB18\uC5F0\uD558\uB2E4\uB294 \uC18C\uC2DD\uC774 \uC774\uC288\uAC00\uB418\uC5B4
+    \uD654\uC81C\uB97C \uBAB0\uACE0 \uC788\uC8E0.\n\n\uC624\uB298\uC740 \uC791\uAC00\uC758\n~\uC758
+    \uCC3D\uAC04\uC77C\uC774 \n n\uB144\uC9F8 \uB418\uB294 \uB0A0\uC774\uAE30\uB3C4
+    \uD55C\uB370\uC694.\n\n \uAD6D\uB0B4\uC5D0\uC11C \uBAA8\uB974\uB294 \uC0AC\uB78C\uC774
+    \n\uAC70\uC758 \uC5C6\uC744\uC815\uB3C4\uB85C \n\uC5C4\uCCAD\uB09C \uC778\uAE30\uB97C
+    \uB048 \uB4A4 \uB4DC\uB77C\uB9C8\uD654, \uC138\uACC4\uC9C4\uCD9C\uB4F1 \uC5EC\uB7EC
+    \uC2DC\uB3C4\uAC00 \uC788\uC5C8\uC9C0\uB9CC \uC544\uC27D\uAC8C\uB3C4 \uBD88\uBC1C\uC774
+    \uB0AC\uC5C8\uB358 \uC801\uC774 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uC77C\uAC01\uC5D0\uC11C\uB294
+    \uC18C\uC124\uC744 \uC81C\uC678\uD55C \uB2E4\uB978 \uD765\uD589\uC758 \uC2E4\uD328\uAC00
+    \uC791\uAC00\uC758 \uC7A0\uC801\uC744 \uBD80\uB978\uAC83\uC740 \uC544\uB2C8\uB0D0
+    \uB77C\uB294 \uC8FC\uC7A5\uB3C4 \uB098\uC624\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uD558\uC9C0\uB9CC,
+    \uC544\uC9C1 \uBA85\uD655\uD55C \uC815\uBCF4\uAC00 \uC5C6\uB294 \n\uC2DC\uC810\uC5D0\uC11C
+    \uC815\uD655\uD55C \uC791\uAC00\uC758 \uD589\uBC29\uACFC \uC774\uC720\uB97C \uC54C
+    \uC218 \uC788\uB294 \uC0AC\uB78C\uC740 \uC791\uAC00 \uBC16\uC5D0 \uC5C6\uC744
+    \uB4EF \uD574\uBCF4\uC785\uB2C8\uB2E4.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 --- !u!222 &1902860581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3316,7 +3333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1129943889}
+      - m_Target: {fileID: 391060884}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
