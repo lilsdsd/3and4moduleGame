@@ -1562,6 +1562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elements: []
+  isElseToGo: 0
   ifElseSceneToGo: Lv1Message
 --- !u!114 &1298988105
 MonoBehaviour:
@@ -2530,10 +2531,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2541,10 +2542,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "[\uAD11\uACE0] \nSNS: \uC288\uD37C \uB274\uC2A4 \uC2DC\uC2A4\uD130\uC988
-    \uC0C8\uC18C\uC2DD! \n'\uD55C\uB54C \uC5C4\uCCAD\uB09C \uC778\uAE30\uB97C \uBAB0\uC558\uB358
-    \uBCA0\uC2A4\uD2B8\uC140\uB7EC <\uD589\uBCF5\uD55C \uBCD1\uC6D0>\uC744 \uC4F4
-    \uC791\uAC00\uAC00 \uC0AC\uB77C\uC84C\uB2E4? '\nSNS\uC5D0\uC11C \uD655\uC778\uD558\uC138\uC694!\n "
+  m_Text: "[\uACF5\uC9C0] SNS: \uC288\uD37C \uB274\uC2A4 \uC2DC\uC2A4\uD130\uC988
+    \uC5C5\uB370\uC774\uD2B8 \uACF5\uC9C0\nSNS\uC758 \uC11C\uBE44\uC2A4 \uAC1C\uD3B8\uC744
+    \uC704\uD574 \uD55C\uB3D9\uC548 \uC11C\uBE44\uC2A4\uAC00\n\uC77C\uC2DC\uC911\uC9C0\uB420
+    \uC608\uC815 \uC785\uB2C8\uB2E4. \nSNS \uAD6C\uB3C5\uC790 \uC5EC\uB7EC\uBD84\uB4E4\uC758
+    \uB9CE\uC740 \uC591\uD574 \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4. \uB354 \uC88B\uC740
+    \uC18C\uC2DD\uACFC \uCEE8\uD150\uCE20\uB85C\n\uBCF4\uB2F5\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4
+    \uAC10\uC0AC\uD569\uB2C8\uB2E4 (_ _)"
 --- !u!222 &1858926884
 CanvasRenderer:
   m_ObjectHideFlags: 0
