@@ -23,7 +23,8 @@ public class BookInfoChecker : MonoBehaviour
     {
         if (BookImage.GetComponent<BookBoriBookImageChanger>().BookCodesNumber > 0){
             OKButton.GetComponent<Image>().color = new Color32(73, 167, 221, 255);
-        }
+            OKButton.GetComponent<Button>().interactable = true;
+      }
         
         if (BookImage.GetComponent<BookBoriBookImageChanger>().BookCodesNumber == 0 ){
             TitleSectionText.GetComponent<Text>().text = "";
@@ -31,6 +32,7 @@ public class BookInfoChecker : MonoBehaviour
             PublicherSectionText.GetComponent<Text>().text = "";
             CateGoriSectionText.GetComponent<Text>().text= "";
             OKButton.GetComponent<Image>().color = new Color32(118, 118, 118, 255);
+            OKButton.GetComponent<Button>().interactable = false;
         }
         if (BookImage.GetComponent<BookBoriBookImageChanger>().BookCodesNumber == 1 ){
             TitleSectionText.GetComponent<Text>().text = "어쌔신크리드";

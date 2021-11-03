@@ -15,6 +15,7 @@ public class GameSystem : MonoBehaviour
 
     public void OpenMessageApp(){
         SceneManager.LoadScene("Lv1Message");
+        PopUpMemoScript.isFirstChecked = true;
     }
 
        public void OpenBankApp(){
@@ -35,6 +36,9 @@ public class GameSystem : MonoBehaviour
 
     public void OpenSNSApp(){
         SceneManager.LoadScene("Lv1SNS");
+    }
+    public void OpenBookBori(){
+        SceneManager.LoadScene("Lv1BookBori");
     }
 
 

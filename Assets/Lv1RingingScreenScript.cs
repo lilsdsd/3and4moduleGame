@@ -36,12 +36,12 @@ public class Lv1RingingScreenScript : MonoBehaviour
         Debug.Log("RingingScreenObject Active Succeseful.");
         
   
-        LeanTween.size(gameObject.GetComponent<RectTransform>(), originalSize.sizeDelta, 0.8f).setEase(LeanTweenType.easeInOutCubic);
+        LeanTween.size(gameObject.GetComponent<RectTransform>(), originalSize.sizeDelta, 0.4f).setEase(LeanTweenType.easeInOutCubic);
 
         for( int i = 0; i < Childs.Count; i++){
 
             
-             LeanTween.size(Childs[i].GetComponent<RectTransform>(), ChildsOriginalSize[i].GetComponent<RectTransform>().sizeDelta, 0.8f).setEase(LeanTweenType.easeInOutCubic).setDelay(0.8f);
+             LeanTween.size(Childs[i].GetComponent<RectTransform>(), ChildsOriginalSize[i].GetComponent<RectTransform>().sizeDelta, 0.4f).setEase(LeanTweenType.easeInOutCubic).setDelay(0.2f);
              //LeanTween.alpha(Childs[i].GetComponent<RectTransform>(), 1f, 0f).setDelay(0.7f);
        
         }

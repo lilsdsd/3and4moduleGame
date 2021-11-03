@@ -8,7 +8,11 @@ public class PopUpMemoScript : MonoBehaviour
     public GameObject BackButton;
     public List<GameObject> Childs;
     public List<GameObject> ChildsOriginalSize;
+    public List<GameObject> Checked;
 
+    public static bool isFirstChecked;
+    public static bool isSecondChecked;
+    public static bool isThirdChecked;
     void Awake(){   
         LeanTween.size(gameObject.GetComponent<RectTransform>(), gameObject.GetComponent<RectTransform>().sizeDelta*0, 0f );
         gameObject.SetActive(false);
@@ -26,6 +30,19 @@ public class PopUpMemoScript : MonoBehaviour
            LeanTween.alpha(Childs[i].GetComponent<RectTransform>(), 0f, 0f).setDelay(0f);
 
         }
+    }
+
+    void Start(){
+        if (isFirstChecked == true){
+            Checked[0].SetActive(true);
+        }
+        if (isSecondChecked == true){
+            Checked[1].SetActive(true);
+        }
+        if (isThirdChecked == true){
+            Checked[2].SetActive(true);
+        }
+      
     }
     void OnEnable()
     {
