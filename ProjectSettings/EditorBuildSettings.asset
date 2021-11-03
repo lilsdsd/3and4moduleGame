@@ -42,6 +42,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1BookBori.unity
     guid: af0183e2c2d02cc4aa2115278ed58f74
   - enabled: 1
-    path: Assets/Scenes/ThePhone/Levels/Level001/L1vBookBori/L1vFirstBook.unity
+    path: Assets/Scenes/ThePhone/Levels/Level001/L1vBookBori/Lv1FirstBook.unity
     guid: 13a6d3b9ffe6292479579db8ab3e6109
   m_configObjects: {}
