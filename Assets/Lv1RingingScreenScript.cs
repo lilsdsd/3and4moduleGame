@@ -7,6 +7,7 @@ public class Lv1RingingScreenScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public RectTransform originalSize;
+    public  GameObject Camera;
     public List<GameObject> Childs;
     public List<GameObject> ChildsOriginalSize;
     void Awake(){
@@ -34,6 +35,8 @@ public class Lv1RingingScreenScript : MonoBehaviour
       
         //transform.SetAsLastSibling();
         Debug.Log("RingingScreenObject Active Succeseful.");
+      //  Camera.GetComponent<CameraShake>().Ringing();
+      
         
   
         LeanTween.size(gameObject.GetComponent<RectTransform>(), originalSize.sizeDelta, 0.4f).setEase(LeanTweenType.easeInOutCubic);
