@@ -20,6 +20,12 @@ public class MessageAppsystem : MonoBehaviour
     public void OpenThird(){
         SceneManager.LoadScene(SceneName[2]);
     }
+    public void OpenForth(){
+        SceneManager.LoadScene(SceneName[3]);
+    }
+    public void OpenFifth(){
+        SceneManager.LoadScene(SceneName[4]);
+    }
 
 
 }

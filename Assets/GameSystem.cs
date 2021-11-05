@@ -1,16 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
+   public List<GameObject> Alarms;
+   
+    
+   
+
+
     void Start()
     {
-        
+        for(int i =0; i < Alarms.Count; i++ ){
+            Alarms[i].SetActive(true);
+        }
+       // Alarms.
     }
 
     public void OpenMessageApp(){
@@ -43,3 +53,5 @@ public class GameSystem : MonoBehaviour
 
 
 }
+ 
+     

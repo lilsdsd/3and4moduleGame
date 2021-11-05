@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MemoApp.unity
     guid: 4314a4b5d262a473598004bd90eff750
   - enabled: 1
-    path: Assets/Scenes/ThePhone/Levels/Level001/(notuse)Lv1BankApp.unity
-    guid: 51614fdcc0b7246e39fbb26ee2903925
-  - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1SNS.unity
     guid: 52ba95ab12458d541a629f53e2e6a456
   - enabled: 1
@@ -38,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MessageList/Lv1ThirdMessage.unity
     guid: d57ec529b6add5c479ae421d546453e3
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MessageList/Lv1ForthMessage.unity
+    guid: 77011ec24b761e04f9e97d503643c490
+  - enabled: 1
+    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MessageList/Lv1FifthMessage.unity
+    guid: 58dcfe5bba00bad4fa20af5ae5f20745
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1BookBori.unity
     guid: af0183e2c2d02cc4aa2115278ed58f74
