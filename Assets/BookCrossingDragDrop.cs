@@ -4,26 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class SontectDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class BookCrossingDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-   
-   [SerializeField] private Canvas canvas;
 
-   private RectTransform rectTransform;
-   private CanvasGroup canvasGroup;
-   
-   public void OnPointerDown(PointerEventData eventData)
+    [SerializeField] private Canvas canvas;
+
+    private RectTransform rectTransform;
+    private CanvasGroup canvasGroup;
+    
+
+    public void OnPointerDown(PointerEventData eventData)
     {
        Debug.Log("OnPointDown");
     }
-
-   private void Awake(){
+    
+    private void Awake(){
       rectTransform = GetComponent<RectTransform>();
       canvasGroup = GetComponent<CanvasGroup>();
-   }
+    }
 
-
-   public void OnDrag(PointerEventData eventData)
+    public void OnDrag(PointerEventData eventData)
     {
        Debug.Log("OnDrag");
        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
@@ -43,7 +43,7 @@ public class SontectDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHan
        canvasGroup.blocksRaycasts = false;
     }
 
-  public void OnDrop(PointerEventData eventData) {
+    public void OnDrop(PointerEventData eventData) {
       throw new System.NotImplementedException();
    }
 }
