@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class BookBoriSceneManager : MonoBehaviour
 {
+    public string SceneNameToGo;
       
-    public void MoveToFirstBook(){
-        SceneManager.LoadScene("Lv1FirstBook");
+    public void MoveToScene(){
+        SceneManager.LoadScene(SceneNameToGo);
     }
+    
 }
