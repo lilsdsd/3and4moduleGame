@@ -8,6 +8,7 @@ public class HeathBar : MonoBehaviour
     public Image HealthBar;
     public float CurrentHealth;
     public GameObject VideoContentor;
+    public float num =1f;
 
     private float MaxHealth = 100f;
 
@@ -68,7 +69,7 @@ public class HeathBar : MonoBehaviour
                 
             }
 
-            CurrentHealth += 1*Time.deltaTime;
+            CurrentHealth += num*Time.deltaTime;
         }
         
     }
