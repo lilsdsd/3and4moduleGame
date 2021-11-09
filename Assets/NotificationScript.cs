@@ -20,7 +20,7 @@ public class NotificationScript: MonoBehaviour
         //Transform OringinalPos = Alarm;
         if (isDisabled == false){
             Alarm.localPosition = new Vector2 (0, -Screen.height*5);
-            Alarm.LeanMoveLocalY(0,1.5f).setEaseOutExpo().delay = 1f;
+            Alarm.LeanMoveLocalY(0,1.5f).setEaseOutExpo().delay = 4f;
         }else if (isDisabled == true){
             gameObject.SetActive(false);
         }
