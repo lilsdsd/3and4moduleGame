@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class TalkingManager : MonoBehaviour
 {
-   public Image actorImage;
-    public Text actorName;
+   //public Image actorImage;
+    //public Text actorName;
     public Text messageText;
-    public RectTransform backgroundBox;
-    public GameObject BG;
+   // public RectTransform backgroundBox;
+   // public GameObject BG;
 
     public float textWritingDelaySpeed;
 
@@ -37,9 +37,9 @@ public class TalkingManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(messageToDisplay));//
 
-        Actor actorToDisplay = currentActors[messageToDisplay.actorId];
+        //Actor actorToDisplay = currentActors[messageToDisplay.actorId];
        
-         actorName.text = actorToDisplay.name;
+       /*  actorName.text = actorToDisplay.name;
         switch(actorName.text)
         {
             case "작가":
@@ -58,12 +58,12 @@ public class TalkingManager : MonoBehaviour
 
 
             
-        }
+        }*/
         
 
        
 
-        actorImage.sprite = actorToDisplay.sprite;
+      //  actorImage.sprite = actorToDisplay.sprite;
     }   
 
     IEnumerator TypeSentence(Message messageToDisplay)//
