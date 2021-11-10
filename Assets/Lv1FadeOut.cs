@@ -8,7 +8,7 @@ public class Lv1FadeOut : MonoBehaviour
     //public Image image;
     public CanvasGroup canvas;
     public float a = 1.25f;
-    public static bool isFadeOK = true;
+    public bool isFadeOK = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,4 +34,9 @@ public class Lv1FadeOut : MonoBehaviour
               gameObject.SetActive(false);
          }
     }
+
+    void Fade(){
+        isFadeOK = true;
+    }
+
 }

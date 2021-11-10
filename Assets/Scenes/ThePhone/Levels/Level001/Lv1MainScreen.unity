@@ -935,7 +935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &737459553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1021,6 +1021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 737459556}
   a: 5
+  isFadeOK: 0
 --- !u!1 &774787214
 GameObject:
   m_ObjectHideFlags: 0
