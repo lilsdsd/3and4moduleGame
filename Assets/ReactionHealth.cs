@@ -20,17 +20,15 @@ public class ReactionHealth : MonoBehaviour
 
     public List<Image> img;
     //public List<Color> col;
-    Color colA;
-    Color colB;
-    Color colC;
+    
     // Start is called before the first frame update
     void Start()
     {
         HealthBar = GetComponent<Image>();
 
-        Color colA = new Color(216, 158, 71,1);
+      /*  Color colA = new Color(216, 158, 71,1);
         Color colB = new Color(62, 197, 0,1);
-        Color colC = new Color(248, 55, 78,1);
+        Color colC = new Color(248, 55, 78,1);*/
 
         CurrentHealth = 0f;
     }
@@ -49,7 +47,7 @@ public class ReactionHealth : MonoBehaviour
 
             } );
             
-            switch(CurrentHealth){
+            /*switch(CurrentHealth){
                 case 0:  
                 LeanTween.value( HealthBar.color, colA,  colA, 5f).setOnUpdate( (Color val)=>{ 
                     Debug.Log("tweened val:"+val);
@@ -73,7 +71,7 @@ public class ReactionHealth : MonoBehaviour
                 } );
 
                 break;
-            }
+            }*/
             
             
          }

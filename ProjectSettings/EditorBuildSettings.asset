@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1MemoApp.unity
     guid: 4314a4b5d262a473598004bd90eff750
   - enabled: 1
-    path: Assets/Scenes/ThePhone/Levels/Level001/Lv1SNS.unity
+    path: Assets/Scenes/ThePhone/Levels/Level002/Lv2SNS.unity
     guid: 52ba95ab12458d541a629f53e2e6a456
   - enabled: 1
     path: Assets/Scenes/ThePhone/Levels/Level001/Lv1Message.unity

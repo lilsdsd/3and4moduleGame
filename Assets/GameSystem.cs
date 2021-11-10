@@ -11,7 +11,7 @@ public class GameSystem : MonoBehaviour
    
    public List<GameObject> Alarms;
    
-    
+    public int WhichLevelNum;
    
 
 
@@ -23,32 +23,45 @@ public class GameSystem : MonoBehaviour
        // Alarms.
     }
 
+
+
     public void OpenMessageApp(){
+        if (WhichLevelNum == 1){
         SceneManager.LoadScene("Lv1Message");
         PopUpMemoScript.isFirstChecked = true;
+        }
     }
 
        public void OpenBankApp(){
-        SceneManager.LoadScene("Lv1BankApp");
+        if (WhichLevelNum == 1){
+         SceneManager.LoadScene("Lv1BankApp");
+           }
     }
 
     public void OpenBirdBookApp(){
-        SceneManager.LoadScene("Lv1BirdBooks");
+        if (WhichLevelNum == 1){
+        SceneManager.LoadScene("Lv1BirdBooks");}
     }
 
     public void OpenSettingApp(){
-        SceneManager.LoadScene("SettingApp");
+        if (WhichLevelNum == 1){
+        SceneManager.LoadScene("SettingApp");}
     }
 
     public void OpenMemoApp(){
-        SceneManager.LoadScene("Lv1MemoApp");
+        if (WhichLevelNum == 1){
+        SceneManager.LoadScene("Lv1MemoApp");}
     }
 
     public void OpenSNSApp(){
-        SceneManager.LoadScene("Lv1SNS");
+        if (WhichLevelNum == 1){
+        SceneManager.LoadScene("Lv1SNS");}
+        if (WhichLevelNum == 2){
+        SceneManager.LoadScene("Lv2SNS");}
     }
     public void OpenBookBori(){
-        SceneManager.LoadScene("Lv1BookBori");
+        if (WhichLevelNum == 1){
+        SceneManager.LoadScene("Lv1BookBori");}
     }
 
 
