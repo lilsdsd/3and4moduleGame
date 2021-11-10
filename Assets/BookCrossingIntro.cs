@@ -9,6 +9,11 @@ public class BookCrossingIntro : MonoBehaviour
 
     public List<GameObject> obj;
 
+    public GameObject StartPoint;
+    public GameObject OriginalPoint;
+    public GameObject OutPoint;
+    public GameObject HandPoint;
+
     void Awake(){
        LeanTween.alpha(gameObject.GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
         for(int i = 0; i < obj.Count; i++){
@@ -26,26 +31,58 @@ public class BookCrossingIntro : MonoBehaviour
     public void AImg(){
 
         obj[0].SetActive(true);
+        LeanTween.move(obj[0].GetComponent<RectTransform>(),  
+        new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
 
     }
 
     public void AImgDown(){
-        LeanTween.alpha(obj[0].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+        //LeanTween.alpha(obj[0].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+             LeanTween.move(obj[0].GetComponent<RectTransform>(),  
+        new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
     }
 
      public void BImg(){
         obj[1].SetActive(true);
+        LeanTween.move(obj[1].GetComponent<RectTransform>(),  
+        new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
      }
 
      public void BImgDown(){
-        LeanTween.alpha(obj[1].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+        LeanTween.move(obj[1].GetComponent<RectTransform>(),
+        new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
     }
 
     public void CImg(){
         obj[2].SetActive(true);
+        obj[3].SetActive(true);
+         LeanTween.move(obj[2].GetComponent<RectTransform>(),  
+        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
+         LeanTween.move(obj[3].GetComponent<RectTransform>(),  
+        new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
      }
      public void CImgDown(){
-        LeanTween.alpha(obj[2].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+        //LeanTween.alpha(obj[2].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+        LeanTween.move(obj[2].GetComponent<RectTransform>(),
+        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x+800, 
+        HandPoint.GetComponent<RectTransform>().anchoredPosition.y+800, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
+         LeanTween.move(obj[3].GetComponent<RectTransform>(),
+        new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
     }
 
 

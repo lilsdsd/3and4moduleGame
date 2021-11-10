@@ -139,6 +139,7 @@ public class OpenningSceneDialogue: MonoBehaviour
                 
                 Debug.Log("eventNum" + eventNum +"Triggered");
                 dialogueManager.GetComponent<TalkingManager>().NextMessage();
+                
                
                 StartCoroutine(ClickDelay(3));
                 //isClick = true;
@@ -148,6 +149,9 @@ public class OpenningSceneDialogue: MonoBehaviour
                 
                 Debug.Log("eventNum" + eventNum +"Triggered");
                 dialogueManager.GetComponent<TalkingManager>().NextMessage();
+               BookCrossingIntroObj.GetComponent<BookCrossingIntro>().AImgDown();
+               BookCrossingIntroObj.GetComponent<BookCrossingIntro>().BImgDown();
+               BookCrossingIntroObj.GetComponent<BookCrossingIntro>().CImg();
                
                 StartCoroutine(ClickDelay(3));
                 //isClick = true;
