@@ -27,6 +27,28 @@ public class BookCrossingIntro : MonoBehaviour
 
         obj[0].SetActive(true);
 
-
     }
+
+    public void AImgDown(){
+        LeanTween.alpha(obj[0].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+    }
+
+     public void BImg(){
+        obj[1].SetActive(true);
+     }
+
+     public void BImgDown(){
+        LeanTween.alpha(obj[1].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+    }
+
+    public void CImg(){
+        obj[2].SetActive(true);
+     }
+     public void CImgDown(){
+        LeanTween.alpha(obj[2].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+    }
+
+
+
+
 }
