@@ -75,15 +75,15 @@ public class BookCrossingIntro : MonoBehaviour
         0), 3f).setEase(LeanTweenType.easeInOutBack);
 
         LeanTween.move(obj[4].GetComponent<RectTransform>(), //book
-        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x-200, 
-        HandPoint.GetComponent<RectTransform>().anchoredPosition.y+10, 
+        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        HandPoint.GetComponent<RectTransform>().anchoredPosition.y+500, 
         0), 3f).setEase(LeanTweenType.easeInOutBack);
      }
      public void CImgDown(){
         
         LeanTween.move(obj[2].GetComponent<RectTransform>(),
-        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x+800, 
-        HandPoint.GetComponent<RectTransform>().anchoredPosition.y+800, 
+        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        HandPoint.GetComponent<RectTransform>().anchoredPosition.y-1000, 
         0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
         
 
@@ -129,7 +129,7 @@ public class BookCrossingIntro : MonoBehaviour
 
         }
 
-        
+
          
 
 
