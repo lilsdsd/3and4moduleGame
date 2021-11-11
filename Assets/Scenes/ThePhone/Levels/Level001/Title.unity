@@ -309,10 +309,10 @@ RectTransform:
   m_Father: {fileID: 467444309}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 195}
-  m_SizeDelta: {x: 495, y: 490}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407516791
 MonoBehaviour:
@@ -461,8 +461,8 @@ RectTransform:
   - {fileID: 1218272704}
   - {fileID: 1374537787}
   - {fileID: 1788905426}
-  - {fileID: 1309620893}
   - {fileID: 1344678278}
+  - {fileID: 1309620893}
   - {fileID: 671607711}
   - {fileID: 41996500}
   - {fileID: 408447216}
@@ -493,6 +493,8 @@ MonoBehaviour:
   - {fileID: 1218272703}
   - {fileID: 1374537786}
   - {fileID: 1788905425}
+  - {fileID: 1309620892}
+  - {fileID: 1344678277}
   StartPoint: {fileID: 671607710}
   OriginalPoint: {fileID: 41996499}
   OutPoint: {fileID: 408447215}
@@ -1503,7 +1505,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 467444309}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1585,6 +1587,7 @@ GameObject:
   - component: {fileID: 1344678278}
   - component: {fileID: 1344678280}
   - component: {fileID: 1344678279}
+  - component: {fileID: 1344678281}
   m_Layer: 5
   m_Name: Hand2
   m_TagString: Untagged
@@ -1604,7 +1607,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 467444309}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1649,6 +1652,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344678277}
   m_CullTransparentMesh: 1
+--- !u!114 &1344678281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344678277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6618988259aa448e183c66c06085af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpenningSceneDialogue: {fileID: 1376891677}
+  spriteRenderer: {fileID: 1344678279}
+  newSprite: {fileID: 21300000, guid: 02488e719e7674dd2b407004a9245561, type: 3}
+  Book: {fileID: 1309620892}
 --- !u!1 &1374537786
 GameObject:
   m_ObjectHideFlags: 0

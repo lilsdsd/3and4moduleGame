@@ -68,45 +68,68 @@ public class BookCrossingIntro : MonoBehaviour
          LeanTween.move(obj[2].GetComponent<RectTransform>(),  
         new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack);
+        0), 3f).setEase(LeanTweenType.easeInOutBack);
          LeanTween.move(obj[3].GetComponent<RectTransform>(),  
         new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack);
+        0), 3f).setEase(LeanTweenType.easeInOutBack);
 
         LeanTween.move(obj[4].GetComponent<RectTransform>(), //book
         new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x-200, 
         HandPoint.GetComponent<RectTransform>().anchoredPosition.y+10, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack);
+        0), 3f).setEase(LeanTweenType.easeInOutBack);
      }
      public void CImgDown(){
         
         LeanTween.move(obj[2].GetComponent<RectTransform>(),
         new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x+800, 
         HandPoint.GetComponent<RectTransform>().anchoredPosition.y+800, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+        0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
         
 
 
          LeanTween.move(obj[3].GetComponent<RectTransform>(), // bookdropper
         new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+        0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
 
         LeanTween.move(obj[4].GetComponent<RectTransform>(), //book
         new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+        0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
     }
 
         public void DImg(){
-
+            
+            obj[5].SetActive(true);
+            obj[6].SetActive(true);
             LeanTween.move(obj[5].GetComponent<RectTransform>(),  
-            new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
-            HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-            0), 2f).setEase(LeanTweenType.easeInOutBack);
+                new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+                OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+                0), 3f).setEase(LeanTweenType.easeInBack);
 
-         }
+            LeanTween.move(obj[6].GetComponent<RectTransform>(),  
+                new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+                HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+                0), 3f).setEase(LeanTweenType.easeInBack);
+
+        }
+
+        public void DImgDown(){
+
+            LeanTween.move(obj[5].GetComponent<RectTransform>(), //
+                new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+                OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+                0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+
+            LeanTween.move(obj[6].GetComponent<RectTransform>(), // 
+                new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+                OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+                0), 3f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+
+        }
+
+        
          
 
 
