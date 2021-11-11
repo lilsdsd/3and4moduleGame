@@ -153,9 +153,22 @@ public class OpenningSceneDialogue: MonoBehaviour
                BookCrossingIntroObj.GetComponent<BookCrossingIntro>().BImgDown();
                BookCrossingIntroObj.GetComponent<BookCrossingIntro>().CImg();
                
-                StartCoroutine(ClickDelay(3));
+               //StartCoroutine(ClickDelay(3));
                 //isClick = true;
             break;
+
+            case 11:
+                
+                Debug.Log("eventNum" + eventNum +"Triggered");
+                dialogueManager.GetComponent<TalkingManager>().NextMessage();
+               
+                BookCrossingIntroObj.GetComponent<BookCrossingIntro>().CImgDown();
+               
+               //StartCoroutine(ClickDelay(3));
+                //isClick = true;
+            break;
+
+
             default:
            
 

@@ -64,6 +64,7 @@ public class BookCrossingIntro : MonoBehaviour
     public void CImg(){
         obj[2].SetActive(true);
         obj[3].SetActive(true);
+        obj[4].SetActive(true);
          LeanTween.move(obj[2].GetComponent<RectTransform>(),  
         new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
@@ -72,17 +73,30 @@ public class BookCrossingIntro : MonoBehaviour
         new Vector3(OriginalPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         OriginalPoint.GetComponent<RectTransform>().anchoredPosition.y, 
         0), 2f).setEase(LeanTweenType.easeInOutBack);
+
+        LeanTween.move(obj[4].GetComponent<RectTransform>(), //book
+        new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x-200, 
+        HandPoint.GetComponent<RectTransform>().anchoredPosition.y+10, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack);
      }
      public void CImgDown(){
-        //LeanTween.alpha(obj[2].GetComponent<RectTransform>(), 0f, 3f).setDelay(0f);
+        
         LeanTween.move(obj[2].GetComponent<RectTransform>(),
         new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x+800, 
         HandPoint.GetComponent<RectTransform>().anchoredPosition.y+800, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack);
-         LeanTween.move(obj[3].GetComponent<RectTransform>(),
+        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+        
+
+
+         LeanTween.move(obj[3].GetComponent<RectTransform>(), // bookdropper
         new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
         OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
-        0), 2f).setEase(LeanTweenType.easeInOutBack);
+        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
+
+        LeanTween.move(obj[4].GetComponent<RectTransform>(), //book
+        new Vector3(OutPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+        OutPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+        0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
     }
 
 
