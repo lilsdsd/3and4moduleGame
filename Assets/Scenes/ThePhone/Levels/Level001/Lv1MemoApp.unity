@@ -757,7 +757,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBB38\uC790 \uD655\uC778\uD558\uAE30"
+  m_Text: "\n\uCC45\uBCF4\uB9AC\uB97C \uC774\uC6A9\uD574\n\uC544\uBB34 \uCC45\uC774\uB098
+    \uD55C\uAD8C \uAD6C\uD558\uAE30"
 --- !u!222 &306783741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -861,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &356479706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -998,7 +999,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 58}
-  m_SizeDelta: {x: 1457.4, y: 0}
+  m_SizeDelta: {x: 1457.4, y: 120.242424}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454142592
 MonoBehaviour:
@@ -1047,7 +1048,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "~\uB97C \uB2E4\uB8EC\uCC45 \uC8FC\uBB38\uD558\uAE30"
+  m_Text: 
 --- !u!222 &454142594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2666,7 +2667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC5B4\uB5A4 \uCC45\uC744 \uAD6C\uD574\uC57C \uD560\uC9C0 \uC54C\uC544\uB0B4\uAE30"
+  m_Text: "\uD734\uB300\uD3F0 \uB458\uB7EC\uBCF4\uAE30"
 --- !u!222 &1073175673
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3907,9 +3908,6 @@ MonoBehaviour:
   - {fileID: 1435598562}
   ChildsOriginalSize: []
   Checked: []
-  isFirstChecked: 0
-  isSecondChecked: 0
-  isThirdChecked: 0
 --- !u!114 &1605986180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,7 +4029,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2026587558}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4178,9 +4176,6 @@ MonoBehaviour:
   - {fileID: 1858982609}
   - {fileID: 1303910083}
   - {fileID: 53867713}
-  isFirstChecked: 0
-  isSecondChecked: 0
-  isThirdChecked: 0
 --- !u!1 &1714941969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,9 +4313,6 @@ MonoBehaviour:
   - {fileID: 456611769}
   ChildsOriginalSize: []
   Checked: []
-  isFirstChecked: 0
-  isSecondChecked: 0
-  isThirdChecked: 0
 --- !u!114 &1717729588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,9 +4710,6 @@ MonoBehaviour:
   - {fileID: 770188600}
   ChildsOriginalSize: []
   Checked: []
-  isFirstChecked: 0
-  isSecondChecked: 0
-  isThirdChecked: 0
 --- !u!114 &1884405647
 MonoBehaviour:
   m_ObjectHideFlags: 0

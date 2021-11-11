@@ -99,7 +99,15 @@ public class BookCrossingIntro : MonoBehaviour
         0), 2f).setEase(LeanTweenType.easeInOutBack).setDelay(1f);
     }
 
+        public void DImg(){
 
+            LeanTween.move(obj[5].GetComponent<RectTransform>(),  
+            new Vector3(HandPoint.GetComponent<RectTransform>().anchoredPosition.x, 
+            HandPoint.GetComponent<RectTransform>().anchoredPosition.y, 
+            0), 2f).setEase(LeanTweenType.easeInOutBack);
+
+         }
+         
 
 
 }

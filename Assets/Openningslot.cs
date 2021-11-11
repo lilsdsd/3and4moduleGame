@@ -19,7 +19,7 @@ public class Openningslot : MonoBehaviour, IDropHandler
             OpenningSceneDialogue.GetComponent<OpenningSceneDialogue>().eventNum += 1;
             OpenningSceneDialogue.GetComponent<OpenningSceneDialogue>().DialogueEvent();
             Book.GetComponent<CanvasGroup>().interactable = false;
-            Book.GetComponent<BookCrossingDragDrop>().enabled = false;
+            //Book.GetComponent<BookCrossingDragDrop>().enabled = false;
             
             LeanTween.move(Book.GetComponent<RectTransform>(), 
             new Vector3(gameObject.GetComponent<RectTransform>().anchoredPosition.x,
